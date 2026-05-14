@@ -10,11 +10,15 @@ header {background-color: bisque;
         }
 
         main {
+          display: grid;
+          grid-template-columns: 1fr 1fr ;
         padding: 20px;  
         max-width: 900px;
         margin: auto;
         padding: 1rem;
+        gap: 1rem;
          }  
+         
         footer {
         background-color: #f8f8f8;
         padding: 20px;
