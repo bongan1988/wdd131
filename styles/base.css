@@ -37,8 +37,10 @@ header {background-color: #c7e26381;
         background-color: #f8f8f8;
         padding: 10px;
         border: 1px solid #ccc;
+        box-shadow: #333 0px 4px 3px;
         }
-         .card h2 {
+         .card h2 {         font-size: 1.5rem;
+        font-weight: bold;
         color: #333;
         margin-top: 0;
         }
