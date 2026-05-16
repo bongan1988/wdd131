@@ -28,7 +28,7 @@ header {background-color: #bcd1d14b;
     ul {
         list-style-type: none;
         padding: 20px;
-        text-wrap: inherit;
+        
         line-height: 1.4;
     }
     main {
