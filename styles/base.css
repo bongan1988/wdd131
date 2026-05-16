@@ -25,7 +25,7 @@ header {background-color: #c7e26381;
     main {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
-        padding: 50px;  
+        padding: 10px;  
         max-width: 900px;
         margin: auto;
         gap: 1rem;
@@ -39,7 +39,8 @@ header {background-color: #c7e26381;
         border: 1px solid #ccc;
         box-shadow: #333 0px 4px 3px;
         }
-         .card h2 {         font-size: 1.5rem;
+         .card h2 {       
+              font-size: 1.5rem;
         font-weight: bold;
         color: #333;
         margin-top: 0;
