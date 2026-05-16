@@ -1,4 +1,4 @@
-header {background-color: rgba(46, 47, 102, 0.521);
+header {background-color: #c7e26381;
         padding: 10px;
         text-align: center;
         font-family: 'Arial', sans-serif;
@@ -30,6 +30,7 @@ header {background-color: rgba(46, 47, 102, 0.521);
         margin: auto;
         gap: 1rem;
         border-radius: 18px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border: 2px solid #ccc;
          }  
          .card {
@@ -43,7 +44,7 @@ header {background-color: rgba(46, 47, 102, 0.521);
         }
 
         footer {
-        background-color: #0b4f7a81;
+        background-color: #c7e26381;
         padding: 10px;
         text-align: center;
         }
