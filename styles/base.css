@@ -30,7 +30,7 @@ header {background-color: #c7e26381;
         margin: auto;
         gap: 1rem;
         border-radius: 18px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 9px 16px rgba(0, 0, 0, 0.1);
         border: 2px solid #ccc;
          }  
          .card {
