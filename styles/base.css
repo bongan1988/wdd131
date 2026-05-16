@@ -29,6 +29,7 @@ header {background-color: rgba(46, 47, 102, 0.521);
         max-width: 900px;
         margin: auto;
         gap: 1rem;
+        border-radius: 18px;
         border: 2px solid #ccc;
          }  
          .card {
