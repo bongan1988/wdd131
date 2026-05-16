@@ -25,14 +25,14 @@ header {background-color: #bcd1d14b;
     ul {
         list-style-type: none;
         padding: 0;
-        max-width: 600px;
+        
         line-height: 1.4;
     }
     main {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
         padding: 10px;  
-       
+       max-width: 1200px;
         align-items: start;
         
         gap: 1rem;
