@@ -26,7 +26,7 @@ header {background-color: #bcd1d14b;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
         padding: 10px;  
-        max-width: 990px;
+       
         align-items: start;
         
         gap: 1rem;
