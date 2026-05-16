@@ -23,6 +23,7 @@ header {background-color: #bcd1d14b;
         background-color: beige;
         font-size: 1rem;
         font-weight: bold;
+        padding: 30px;
     }
     ul {
         list-style-type: none;
