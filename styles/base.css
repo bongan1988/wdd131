@@ -33,7 +33,14 @@ header {background-color: #c7e26381;
         border-radius: 8px;
         box-shadow: 0 9px 16px rgba(0, 0, 0, 0.1);
         border: 2px solid #ccc;
-         }  
+         } 
+         h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        
+    }
          .card {
         background-color: #f8f8f8;
         padding: 10px;
