@@ -24,12 +24,12 @@ header {background-color: #c7e26381;
     }
     main {
           display: grid;
-          grid-template-columns: 2fr 1fr 1fr;
-        padding: 80px;  
+          grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px;  
         max-width: 900px;
         margin: auto;
         gap: 1rem;
-        border-radius: 18px;
+        border-radius: 8px;
         box-shadow: 0 9px 16px rgba(0, 0, 0, 0.1);
         border: 2px solid #ccc;
          }  
