@@ -20,7 +20,7 @@ header {background-color: #bcd1d14b;
         }
     #course-title {
         display: block;
-        background-color: beige;
+        background-color: rgba(43, 55, 109, 0.623);
         font-size: 1rem;
         font-weight: bold;
         padding: 30px;
