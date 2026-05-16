@@ -24,7 +24,7 @@ header {background-color: #c7e26381;
     }
     main {
           display: grid;
-          grid-template-columns: 2fr 1fr 1fr;
+          grid-template-columns: 2fr 1fr 1fr 1fr;
         padding: 10px;  
         max-width: 900px;
         margin: auto;
