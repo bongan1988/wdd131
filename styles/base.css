@@ -56,12 +56,14 @@ header {background-color: #bcd1d14b;
         padding: 70px;
         border: 1px solid #ccc;
         box-shadow: #333 0px 4px 3px;
+        box-sizing: border-box;
         }
          .card h2 {       
               font-size: 1.5rem;
         font-weight: bold;
         color: #333;
         margin-top: 0;
+        box-sizing: border-box;
         }
 
         footer {
