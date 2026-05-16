@@ -19,6 +19,8 @@ header {background-color: #bcd1d14b;
         text-decoration: none;  
         }
     #course-title {
+        display: block;
+        background-color: beige;
         font-size: 1rem;
         font-weight: bold;
     }
