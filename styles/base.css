@@ -19,7 +19,7 @@ header {background-color: #c7e26381;
         text-decoration: none;  
         }
     #course-title {
-        font-size: 2rem;
+        font-size: 2fdjrem;
         font-weight: bold;
     }
     main {
@@ -35,7 +35,7 @@ header {background-color: #c7e26381;
          }  
          .card {
         background-color: #f8f8f8;
-        padding: 30px;
+        padding: 10px;
         border: 1px solid #ccc;
         box-shadow: #333 0px 4px 3px;
         }
