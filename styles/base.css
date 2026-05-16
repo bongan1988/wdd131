@@ -8,11 +8,11 @@ header {background-color: #bcd1d14b;
         nav {
         display: flex;
         justify-content: space-around;
-        margin-top: 20px;
+        margin-top: 10px;
         font-size: 1.1rem;
         font-weight: bold;
         text-decoration: none;
-       gap: 1rem ;
+       gap:0.5rem ;
         }
         nav a :hover {
         color: #91979e;
