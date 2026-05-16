@@ -18,8 +18,11 @@ header {background-color: rgba(46, 47, 102, 0.521);
         color: #91979e;
         text-decoration: none;  
         }
-    
-        main {
+    #course-title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    main {
           display: grid;
           grid-template-columns: 2fr 1fr ;
         padding: 80px;  
