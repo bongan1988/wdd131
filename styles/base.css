@@ -23,7 +23,7 @@ header {background-color: #c7e26381;
         font-weight: bold;
     }
     main {
-          display: grid;
+          display: flexbox;
           grid-template-columns: 2fr 1fr ;
         padding: 80px;  
         max-width: 900px;
