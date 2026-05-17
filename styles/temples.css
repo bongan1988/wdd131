@@ -1,3 +1,6 @@
+@media screen and (min-width: 768px) {
+    
+
 *{margin: 0; padding: 0; box-sizing: border-box;
 }
 body {
@@ -49,4 +52,5 @@ figure caption {
     margin-top: 10px;
     font-size: 1.1em;
     color: #555;
+}
 }
