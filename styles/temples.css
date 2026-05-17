@@ -36,7 +36,7 @@ main {
     padding: 20px;
     margin-bottom: 1.5rem;
 }
-.gallery {
+.gallery-item {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
