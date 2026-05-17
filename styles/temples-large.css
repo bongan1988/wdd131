@@ -7,7 +7,7 @@ nav{
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-    gap: 20px;
+    gap: 10px;
 }
 figure:hover {
     transform: scale(1.05);
