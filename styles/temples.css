@@ -1,56 +1,61 @@
-@media screen and (min-width: 768px) {
-    
-
-*{margin: 0; padding: 0; box-sizing: border-box;
-}
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
+
+/* HEADER */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
+
+/* NAV (mobile hidden by default) */
 nav {
-    background-color: #444;
-    display: flex;
-    flex-direction: column;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
 }
+
 nav a {
-    color: #fff;
-    padding: 15px;
-    text-decoration: none;
-    text-align: center;
+  text-decoration: none;
+  padding: 10px;
 }
-nav a:hover {
-    background-color: #555;
+
+/* show nav when active */
+nav.open {
+  display: flex;
 }
+
+/* hamburger button */
+#menuBtn {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+}
+
+/* MAIN */
 main {
-    padding: 20px;
-    margin-bottom: 1.5rem;
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
 }
-.gallery-item {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+
+/* GRID (mobile = 1 column) */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
-figure {
-    margin: 0;
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border: 10px solid #fff;
+
+figure img {
+  width: 100%;
+  height: auto;
 }
-figure caption {
-    margin-top: 10px;
-    font-size: 1.1em;
-    color: #555;
-}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
 }

@@ -1,15 +1,16 @@
-nav{
-    background-color: #444;
-    display: flex;
+@media (min-width: 768px) {
+
+  nav {
+    display: flex !important;
     flex-direction: row;
-    justify-content: center;
-}
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-    gap: 10px;
-}
-figure:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+    justify-content: space-around;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
