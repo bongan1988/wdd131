@@ -22,29 +22,22 @@ body {
 
 /* Hero Section */
 .hero {
+    
     background-image: url("/images/south-africa.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+   
     height: 500px;
     width: 100%;
     display: flex;
-    justify-content: center;
+   
     align-items: center;
 
     color: white;
     text-align: center;
 }
 
-/* Main Layout */
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1rem;
-    max-width: 1200px;
-    margin: auto;
-}
+
 
 /* Cards */
 .card {
@@ -52,6 +45,29 @@ main {
     padding: 1.5rem;
     border-radius: 1px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.hero-data {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(158, 149, 149, 0.582);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.weather {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background: rgba(158, 149, 149, 0.582);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+main {
+    grid-template-columns: 1fr 1fr;
 }
 
 .card h2 {
