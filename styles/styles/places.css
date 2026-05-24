@@ -31,15 +31,7 @@ header {
 header h1 {
     font-size: 2rem;
 }
-header h1::after {
-    content: "";
-    display: block;
-    width: 120px;
-    height: 4px;
-    background-color: #00b4d8;
-    margin: 10px auto 0;
-    border-radius: 2px;
-}
+
 
 /* Hero Section */
 .hero {
