@@ -1,61 +1,119 @@
+:root {
+  --primary-color: #1d3557;
+  --secondary-color: #457b9d;
+  --accent-color: #f4a261;
+  --background-color: #f8f9fa;
+  --text-color: #222;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 /* HEADER */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
   padding: 1rem;
 }
 
-/* NAV (mobile hidden by default) */
+header h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* MENU BUTTON */
+#menuBtn {
+  display: block;
+  margin: auto;
+  font-size: 1.8rem;
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* NAVIGATION */
 nav {
   display: none;
   flex-direction: column;
-  gap: 10px;
+  margin-top: 1rem;
 }
 
-nav a {
-  text-decoration: none;
-  padding: 10px;
-}
-
-/* show nav when active */
 nav.open {
   display: flex;
 }
 
-/* hamburger button */
-#menuBtn {
-  font-size: 1.5rem;
-  background: none;
-  border: none;
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--accent-color);
+  color: black;
 }
 
 /* MAIN */
 main {
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
   padding: 1rem;
 }
 
-/* GRID (mobile = 1 column) */
+main h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* GALLERY GRID */
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+/* FIGURE CARD */
+figure {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+figure:hover {
+  transform: scale(1.02);
 }
 
 figure img {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+figcaption {
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 /* FOOTER */
 footer {
-  text-align: center;
+  margin-top: 2rem;
   padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
 }

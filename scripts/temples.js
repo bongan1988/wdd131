@@ -1,15 +1,21 @@
 const menuBtn = document.getElementById("menuBtn");
 const navMenu = document.getElementById("navMenu");
 
+/* Hamburger Toggle */
 menuBtn.addEventListener("click", () => {
   navMenu.classList.toggle("open");
 
-  // toggle icon
-  menuBtn.textContent = navMenu.classList.contains("open") ? "✖" : "☰";
+  if (navMenu.classList.contains("open")) {
+    menuBtn.textContent = "✖";
+  } else {
+    menuBtn.textContent = "☰";
+  }
 });
 
-// footer year
-document.getElementById("year").textContent = new Date().getFullYear();
+/* Dynamic Footer Year */
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 
-// last modified
-document.getElementById("lastModified").textContent = document.lastModified;
+/* Last Modified Date */
+document.getElementById("lastModified").textContent =
+  document.lastModified;
