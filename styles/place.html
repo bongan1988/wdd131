@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Place Page</title>
+
+  <link rel="stylesheet" href="styles/places.css"/>
+</head>
+
+<body>
+
+  <header>
+    <h1>South Africa</h1>
+  </header>
+
+  <section class="hero">
+    <img src="images/south-africa.jpg" alt="Beautiful place image">
+  </section>
+
+  <main>
+
+    <!-- Data Section -->
+    <section class="card">
+      <h2>Data</h2>
+
+      <div class="info">
+        <span class="label">Area:</span>
+        <span>500 km²</span>
+
+        <span class="label">Population:</span>
+        <span>1,200,000</span>
+
+        <span class="label">Language:</span>
+        <span>English</span>
+
+        <span class="label">Currency:</span>
+        <span>Rand</span>
+
+        <span class="label">Timezone:</span>
+        <span>GMT +2</span>
+
+        <span class="label">Climate:</span>
+        <span>Warm</span>
+      </div>
+    </section>
+
+    <!-- Weather Section -->
+    <section class="card weather">
+      <h2>Weather ⛅</h2>
+
+      <div class="info">
+        <span class="label">Temperature:</span>
+        <span>24°C</span>
+
+        <span class="label">Humidity:</span>
+        <span>65%</span>
+
+        <span class="label">Wind:</span>
+        <span>12 km/h</span>
+
+        <span class="label">Condition:</span>
+        <span>Sunny</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      © <span id="year"></span> | Bongani Brighton Sibanda | South Africa
+    </p>
+
+    <p id="lastModified"></p>
+  </footer>
+
+   <script>
+    document.getElementById("lastModified").textContent =
+      "Last Modified: " + document.lastModified;
+  </script>
+
+</body>
+</html>

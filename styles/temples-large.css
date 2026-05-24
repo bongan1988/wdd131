@@ -1,35 +1,13 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) { 
 
-  /* HEADER */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  /* HEADER */ header { display: flex; justify-content: space-between;
 
-  header h1 {
-    margin: 0;
-  }
+  header h1 { margin: 0;
 
-  /* HIDE HAMBURGER */
-  #menuBtn {
-    display: none;
-  }
+  /* HIDE HAMBURGER */ #menuBtn{ display:none; }
 
-  /* SHOW NAV */
-  nav {
-    display: flex !important;
-    flex-direction: row;
-    gap: 1rem;
-    margin-top: 0;
-  }
+  /* SHOW NAV */ nav { display: flex !important; flex-direction: row; gap: 1rem; margin-top: 0; }
 
-  nav a {
-    border-radius: 5px;
-  }
+  nav a { border radius: 5px; }
 
-  /* RESPONSIVE GRID */
-  .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-}
+  /* RESPONSIVE GRID */ .gallery { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); } } 
