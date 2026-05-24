@@ -1,86 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">    
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Temple Album - A collection of beautiful temples from around the world.">
-    <meta name="author" content="Bongani Brighton Sibanda">
-    <title>Temple Album</title>
-    <link rel="stylesheet" href="styles/temples.css">   
-    <link rel="stylesheet" href="styles/temples-large.css"> 
-    <script src="scripts/temples.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  </head>
+  <title>Temple Album</title>
+
+  <!-- Google Fonts (example) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Mobile-first CSS -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <!-- JavaScript -->
+  <script src="scripts/temples.js" defer></script>
+</head>
+
 <body>
- <header>
+  <header>
     <h1>Temple Album</h1>
-    <nav>
-        
-            <a href="#">Home</a>
-            <a href="temples.html">Old</a>
-            <a href="contact.html">New</a>
-            <a href="contact.html">Large</a>
-            <a href="contact.html">Small</a>
 
-        
+    <button id="menuBtn">☰</button>
+
+    <nav id="navMenu">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
     </nav>
- </header>
- 
+  </header>
+
   <main>
-    <section class="temple-gallery">
-        <h2>Our Temples</h2>
-        
-            <figure class="gallery-item">
-                <img src="images/temple1.jpg" alt="Temple 1">
-                <figcaption>Temple of the Sun</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="images/temple2.jpg" alt="Temple 2">
-                <figcaption>Temple of the Moon</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="images/temple3.jpg" alt="Temple 3">
-                <figcaption>Temple of the Stars</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="images/temple4.jpg" alt="Temple 4">
-                <figcaption>Temple of the Sun</figcaption>
-            </figure>
-             <figure class="gallery-item">
-                <img src="images/temple5.jpg" alt="Temple 5">
-                <figcaption>Temple of the Sun</figcaption>
-             </figure>
-             <figure class="gallery-item">
-                <img src="images/temple6.jpg" alt="Temple 6">
-                <figcaption>Temple of the Sun</figcaption>
-            </figure>
-             <figure class="gallery-item">
-                <img src="images/temple7.jpg" alt="Temple 7">
-                <figcaption>Temple of the Sun</figcaption>
+    <h2>Temples</h2>
 
-            </figure>
-             <figure class="gallery-item">
-                <img src="images/temple8.jpg" alt="Temple 8">
-                <figcaption>Temple of the Sun</figcaption>
-            </figure>
-             <figure class="gallery-item">
-                <img src="images/temple9.jpg" alt="Temple 9">
-                <figcaption>Temple of the Sun</figcaption>
-             </figure>
+    <section class="gallery">
+      <figure>
+        <img src="images/placeholder.jpg" alt="Temple">
+        <figcaption>Temple 1</figcaption>
+      </figure>
+
+      <figure><img src="images/temple2.jpg" alt="Temple"><figcaption>Temple 2</figcaption></figure>
+      <figure><img src="images/temple3.jpg" alt="Temple"><figcaption>Temple 3</figcaption></figure>
+      <figure><img src="images/temple4.jpg" alt="Temple"><figcaption>Temple 4</figcaption></figure>
+      <figure><img src="images/temple5.jpg" alt="Temple"><figcaption>Temple 5</figcaption></figure>
+      <figure><img src="images/temple6.jpg" alt="Temple"><figcaption>Temple 6</figcaption></figure>
+      <figure><img src="images/temple7.jpg" alt="Temple"><figcaption>Temple 7</figcaption></figure>
+      <figure><img src="images/temple8.jpg" alt="Temple"><figcaption>Temple 8</figcaption></figure>
+      <figure><img src="images/temple9.jpg" alt="Temple"><figcaption>Temple 9</figcaption></figure>
     </section>
- </main >
-<footer>
-   <p> &copy; <span id="current-year"></span> Bongani Brighton Sibanda. All rights reserved.</p>
-      <p id="last-modified">Last modified: <span id="modification-date"></span></p>
-</footer>
- </body>         
+  </main>
 
-
-
-
-
-
+  <footer>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
 </html>
