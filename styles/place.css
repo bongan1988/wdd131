@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #003366;
+    --secondary-color: #f4f4f4;
+    --accent-color: #0077cc;
+    --text-color: #333;
+    --heading-font: Arial, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--heading-font);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    line-height: 1.6;
+}
+.hero {
+    background: url('/images/hero.jpg') no-repeat center center/cover;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+.hero-data{
+     background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+.card h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.info {
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr);
+    row-gap: 0.8rem;
+    margin-top: 10px;
+}
+.label {
+    font-weight: bold;
+    display: inline-block;
+    color: #0d47a1;
+    padding: 5px 10px;
+    border-radius: 40px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    background-color:linear-gradient(135deg, #e3f2fd ,#ffffff);
+}
+.weather {
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    padding: 10px;
+       border-radius: 8px;
+    align-items: center;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+footer{
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media screen and (max-width: 768px) {
+    .info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
