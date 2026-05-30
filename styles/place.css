@@ -64,6 +64,11 @@ body {
     max-width: 250px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
+.weather h2 ::after {
+    content: "⛅";
+    font-size: 1.5rem;
+    
+}
 main {
     grid-template-columns: 1fr 1fr;
 }
