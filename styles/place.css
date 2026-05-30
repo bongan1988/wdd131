@@ -1,3 +1,4 @@
+/* Reset */
 :root {
     --primary-color: #003366;
     --secondary-color: #f4f4f4;
@@ -11,93 +12,120 @@
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: var(--heading-font);
-    color: var(--text-color);
     background-color: var(--secondary-color);
+    color: var(--text-color);
     line-height: 1.6;
 }
+
+/* Hero Section */
 .hero {
-    background: url('/images/hero.jpg') no-repeat center center/cover;
+    
+    background-image: url("/images/south-africa.jpg");
+    background-size: cover;
+    background-position: center;
+   
     height: 500px;
     width: 100%;
     display: flex;
-    justify-content: center;
+   
     align-items: center;
+
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-.card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    transition: transform 0.3s ease;
-}
-.hero-data{
-     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    transition: transform 0.3s ease;
-}
-.card h2 {
-    color: var(--primary-color);
-    margin-bottom: 10px;
     text-align: center;
 }
-.info {
-    display: grid;
-    grid-template-columns: repeat(1fr, 1fr);
-    row-gap: 0.8rem;
-    margin-top: 10px;
+
+/* Cards */
+.card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
-.label {
-    font-weight: bold;
-    display: inline-block;
-    color: #0d47a1;
-    padding: 5px 10px;
-    border-radius: 40px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
-    background-color:linear-gradient(135deg, #e3f2fd ,#ffffff);
+.hero-data {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(158, 149, 149, 0.582);
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 .weather {
     position: absolute;
-    top: 130px;
+    top: 60px;
     left: 20px;
-    padding: 10px;
-       border-radius: 8px;
-    align-items: center;
+    background: rgba(158, 149, 149, 0.582);
+    padding: 15px;
+    border-radius: 10px;
     max-width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-footer{
+main {
+    grid-template-columns: 1fr 1fr;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* Info Grid */
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.8rem;
+}
+
+.label {
+    font-weight: 600;
+    padding: 5px 10px;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    color: #0d47a1;
+    border-radius: 40px;
+    display: inline-block;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Footer */
+footer {
     background-color: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 1rem;
+    margin-top: 1rem;
 }
-@media screen and (max-width: 768px) {
-    .info {
-        grid-template-columns: repeat(1, 1fr);
+
+/* Responsive Desktop Layout */
+@media screen and (min-width: 568px) { 
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
     }
-    
-}
-header {
-    background-color: var(--primary-color);
+
+    .weather {
+        margin-top: 5rem;
+    }
+
+    header {
+    background: linear-gradient(135deg, #003366, #00509e);
     color: white;
-    padding: 20px 0;
+    padding: 1.5rem 2rem;
     text-align: center;
-    border-bottom: 4px solid var(--accent-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-bottom: 5px solid #00b4d8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 header h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}}
