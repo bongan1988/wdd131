@@ -43,7 +43,7 @@ header h1 {
 
 /* NAVIGATION */
 nav {
-  display: none;
+  
   flex-direction: column;
   
 }
