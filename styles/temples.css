@@ -63,11 +63,6 @@ main h2 {
   margin-bottom: 1.5rem;
 }
 
-/* GALLERY GRID */
-.gallery {
-  display: grid;
- 
- }
 
 /* FIGURE CARD */
 figure {
