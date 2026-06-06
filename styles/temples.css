@@ -45,7 +45,7 @@ header h1 {
 nav {
   display: none;
   flex-direction: column;
-  margin-top: 1rem;
+  
 }
 
 nav.open {
