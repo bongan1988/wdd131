@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+
+    <h1>Product Review </h1>
+    <section class="card">
+        <h2>Product Name</h2>
+        <p>Product description goes here. It provides details about the product features and specifications.</p>
+        <select>
+
+            <h2>Rating:</h2>
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+        </select>
+        <h2>Date of Installation:</h2>
+        date: <input type="date" id="review-date" name="review-date">
+        <h2>which features did you find most useful?</h2>
+        <input type="checkbox" id="Durability" name="Durability" value="Feature 1">
+        <label for="Durability">Durability</label><br>
+        <input type="checkbox" id="Ease of use" name="Ease of use" value="Feature 2">
+        <label for="Ease of use">Ease of use</label><br>
+        <input type="checkbox" id="Performance" name="Performance" value="Feature 4">
+        <label for="Performance">Performance</label><br>
+        <input type="checkbox" id="Design" name="Design" value="Feature 3">
+        <label for="Design">Design</label><br>
+    </section>    
+     
+</head>
+<body>
+    <form>
+        
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="post">Post Review</button>
+    </form>
+</body>
+
+<footer>
+    <p>&copy; 2026 Product Reviews. All rights reserved.</p>
+    
+</footer>
+</html>
