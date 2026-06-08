@@ -11,32 +11,46 @@
      
 </head>
 <body>
-    <h1>Product Review </h1>
-    <section class="card">
-        <h2>Product Name</h2>
-        <p>Product description goes here. It provides details about the product features and specifications.</p>
-        <select>
+    <<form method="get" action="review.html">
 
-            <h2>Rating:</h2>
-            <option value="1">1 Star</option>
-            <option value="2">2 Stars</option>
-            <option value="3">3 Stars</option>
-            <option value="4">4 Stars</option>
-            <option value="5">5 Stars</option>
-        </select>
-        <h2>Date of Installation:</h2>
-        date: <input type="date" id="review-date" name="review-date">
-        <h2>which features did you find most useful?</h2>
-        <input type="checkbox" id="Durability" name="Durability" value="Feature 1">
-        <label for="Durability">Durability</label><br>
-        <input type="checkbox" id="Ease of use" name="Ease of use" value="Feature 2">
-        <label for="Ease of use">Ease of use</label><br>
-        <input type="checkbox" id="Performance" name="Performance" value="Feature 4">
-        <label for="Performance">Performance</label><br>
-        <input type="checkbox" id="Design" name="Design" value="Feature 3">
-        <label for="Design">Design</label><br>
-    </section>    
-    
+    <label for="product">Product Name</label>
+    <select id="product" name="product" required>
+        <option value="" disabled selected>Select a Product ...</option>
+        <option value="fc-1888">Flux Capacitor</option>
+        <option value="fc-2050">Power Laces</option>
+        <option value="fs-1987">Flying Skateboard</option>
+        <option value="ac-2000">Alien Communicator</option>
+    </select>
+
+    <label for="review-date">Date of Installation</label>
+    <input type="date" id="review-date" name="review-date" required>
+
+    <fieldset>
+        <legend>Useful Features</legend>
+
+        <input type="checkbox" id="durability" name="features" value="Durability">
+        <label for="durability">Durability</label>
+
+        <input type="checkbox" id="ease-of-use" name="features" value="Ease of Use">
+        <label for="ease-of-use">Ease of Use</label>
+
+        <input type="checkbox" id="performance" name="features" value="Performance">
+        <label for="performance">Performance</label>
+
+        <input type="checkbox" id="design" name="features" value="Design">
+        <label for="design">Design</label>
+    </fieldset>
+
+    <form method="get" action="review.html">
+
+    <!-- Form fields go here -->
+
+    <button type="submit">Submit Review</button>
+
+</form>
+
+</form>  
+
     <form>
         
 
