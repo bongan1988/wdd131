@@ -1,73 +1,116 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Poppins', sans-serif;
-    background: #f5f5f5;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
     padding: 20px;
 }
-form{
-    background: #fff;
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #d8d1d8;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    max-width: 400px;
-    margin: auto;
 }
-h1{ background: #4CAF50;
+
+h1 {
+    background-color: #3b003b;
     color: white;
-    padding: 10px;
     text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
     border-radius: 5px 5px 0 0;
 }
+
 label,
-legend{
+legend {
     display: block;
-    margin-bottom: 5px;
     font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
+
 select,
-input[type="text"],
 input[type="date"],
+input[type="text"],
 textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    font-size: 1rem;
 }
-fieldset {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-}
-fieldset{
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 4px;     
 
+fieldset {
+    border: none;
+    margin-top: 15px;
 }
+
+.rating-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.rating-group label {
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
 .features label {
-    display: inline-block;
-    margin-right: 10px;
+    display: inline;
+    font-weight: normal;
+    margin-left: 5px;
 }
-.features input{
-    margin-right: 5px;
+
+.features input {
+    margin-top: 8px;
 }
+
 textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 120px;
 }
-@media screen and (max-width: 500px){
-    form{
-        padding: 15px;
-    }
-    body{
+
+.optional {
+    color: blue;
+    font-size: 0.85rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f0f0f0;
+    border: 1px solid #999;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e0e0e0;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 600px) {
+    body {
         padding: 10px;
     }
-    
+
+    form {
+        width: 100%;
+    }
+
+    .rating-group {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 }
