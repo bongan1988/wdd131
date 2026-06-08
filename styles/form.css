@@ -62,3 +62,12 @@ textarea {
     resize: vertical;
     min-height: 100px;
 }
+@media screen and (max-width: 500px){
+    form{
+        padding: 15px;
+    }
+    body{
+        padding: 10px;
+    }
+    
+}
