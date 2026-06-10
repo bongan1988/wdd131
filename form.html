@@ -19,23 +19,23 @@
     <form method="get" action="review.html">
       
     <label for="product">Product Name</label>
-      <fieldset>
+     <fieldset>
     <legend>Overall Rating</legend>
 
     <input type="radio" id="rating1" name="rating" value="1" required>
-    <label for="rating1">☆</label>
+    <label for="rating1">★</label>
 
     <input type="radio" id="rating2" name="rating" value="2">
-    <label for="rating2">☆☆</label>
+    <label for="rating2">★★</label>
 
     <input type="radio" id="rating3" name="rating" value="3">
-    <label for="rating3">☆☆☆</label>
+    <label for="rating3">★★★</label>
 
     <input type="radio" id="rating4" name="rating" value="4">
-    <label for="rating4">☆☆☆☆</label>
+    <label for="rating4">★★★★</label>
 
     <input type="radio" id="rating5" name="rating" value="5">
-    <label for="rating5">☆☆☆☆☆</label>
+    <label for="rating5">★★★★★</label>
 </fieldset>
 
     <select id="product" name="product" required>
@@ -46,8 +46,9 @@
         <option value="ac-2000">Alien Communicator</option>
     </select>
           
-    <label for="review-date">Date of Installation</label>
-    <input type="date" id="review-date" name="review-date" required>
+    
+    <label for="install-date">Date of Installation</label>
+    <input type="date" id="install-date" name="install-date" required>
    <h3>which features do you find most useful?</h3><br>(check all that apply)
     <fieldset>
         <legend>Useful Features</legend>
@@ -77,8 +78,7 @@
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="post">Post Review</button>
+      <input type="submit" value="Post Review">
     </form>
     <footer>
     <p>&copy; <span id="currentyear"></span> Product Reviews. All rights reserved.</p>
