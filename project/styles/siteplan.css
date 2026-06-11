@@ -6,3 +6,6 @@ h1, footer {
     background-color: #3b003b;
     color: #ffffff;
 }
+body {
+    font-family: "Poppins", sans-serif;
+}
