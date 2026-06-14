@@ -176,10 +176,7 @@ section figure:hover figcaption {
   align-items: center;
   justify-content: space-between;
 }
-.logo img {
-  height: 100px;
-  width: auto;
-}
+
 
 /* Navigation */
 .main-nav {
@@ -377,25 +374,6 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
-/* ===============================
-   TABLE STYLING
-================================ */
-table {
-  width: 180%;
-  border-collapse: collapse;
-  margin: 1.5rem 0 1.5rem 0; /* top right bottom left */
-  font-family: Arial, sans-serif;
-  margin-left: 0;
-}
-
-
-th,
-td {
-  border: 1px solid #ddd;
-  padding: 1.4rem 1rem;
-  text-align: center;      /* center text horizontally */
-  vertical-align: middle;  /* center vertically */
-}
 
 /* ================about page history====*/
 
@@ -425,15 +403,6 @@ td {
         min-width: 300px;
 }
 
-
-th {
-  background-color: #f4f6f8;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
 
 .newsletter {
   background: #f4f8fb;
