@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OSI Model | Telecommunications Technology and Networks</title>
+  <meta name="description" content="Learn about telecommunications technology, network infrastructure, data communication systems, wireless networks, and modern connectivity solutions. Explore the technologies that power global communication.">
+  <title>Site Plan | Telecommunications Technology and Networks</title>
   <link rel="stylesheet" href="styles/siteplan.css">
+  <script src="scripts/siteplan.js" defer></script> 
 </head>
-
+        
 <body>
+    
     <header class="site-header">
         <div class="nav-container">
-            <div class="logo">
-                <img src="images/logo.jpg" alt="Telecommunications-logo" class="logo">
-            </div> <!-- .logo -->
             <nav class="main-nav">
                 <a href="siteplan.html">Home</a>
                 <a href="osi-model.html">OSI Model</a>
@@ -21,15 +21,16 @@
             </nav> <!-- .main-nav -->
         </div> <!-- .nav-container -->
     </header> <!-- .site-header -->
-
     <main>
-        <div class="hero">
-            <img src="images/data centre.jpg" alt="Data centre">
-            <div class="hero-overlay">
-                <h1>Telecommunications Technology and Networks</h1>
-            </div>
-        </div>
+      <div class="hero">
+    <img src="images/data-centre.jpg"
+         alt="Data centre"
+         loading="lazy">
 
+    <div class="hero-overlay">
+        <h1>Telecommunications Technology and Networks</h1>
+    </div>
+</div>
         <section class="trip-card">
             <div class="container hero-content">
                 <h2> Telecommunications Technology and Networks</h2>
@@ -43,15 +44,16 @@
                 </p>
                 <div class="hero-buttons">
                     <a href="osi-model.html" class="btn primary">Learn About the OSI Model</a>
+                   <a href="networking-technology.html" class="btn primary">Learn About Networking Technology</a>
                     <a href="fibre-optic-communication.html" class="btn secondary">Learn About Fibre Optic Communication</a>
                 </div>
             </div>
         </section>
-        <!-- Featured Trips -->
+        
         <section class="trips-grid">
             <article class="trip-card">
                 <h2>Fibre Optic Communication</h2>
-                <img src="images/fibre-optic-communication.jpg" alt="fibre optic communication">
+                <img src="images/fibre optic.jpg" alt="fibre optic communication">
                 <p>Learn about the technology behind high-speed data transmission through light signals in optical fibers.</p>
                 <a href="fibre-optic-communication.html" class="btn">Explore</a>
             </article>
@@ -69,37 +71,14 @@
                 <a href="osi-model.html" class="btn">Explore</a>
             </article>
         </section>
-       
-            
+                   
     </main>
-    <section class="newsletter">
-        <div class="container">
-            <h3>Join Our Adventure Newsletter</h3><br>
-
-            <form action="#" method="post" class="newsletter-form">
-
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                </div>
-
-                <button type="submit" class="signup-btn">
-                    Join Our Community
-                </button>
-
-            </form>
-        </div>
-
-    </section>
-
+    
+      
     <!-- .site footer -->
     <footer>
-        <p> ©2026 Telecommunication Systems Technology | Bongani-Brighton </p>
+        <p> &copy; <span id="current-year"></span> Telecommunication Systems Technology | Bongani-Brighton </p>
+        <p id="last-modified">Last modified: <span id="modification-date"></span></p>
         
     </footer>
 </body>
